@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
-import '../App.css';
 import { Link } from "react-router-dom";
 //import '../App.css';
+import { Layout, Typography} from "antd";
+
+const {Header} = Layout;
 
 const HeaderBar = () => {
   const [current, setCurrent] = useState({key: window.location.pathname});
@@ -45,7 +47,7 @@ const HeaderBar = () => {
 
 
   return (
-    <div className="site-layout">
+    <>
       <div style={{ display: 'flex', paddingLeft: 50, paddingRight: 50, alignItems: 'center' }}>
         <div style={{ fontSize: 64, fontWeight: 'bold' }}>OneURL</div>
         <div style={{ display: 'flex', width: '100%', justifyContent: 'flex-end', fontSize: 24 }}>
@@ -74,7 +76,7 @@ const HeaderBar = () => {
           </Link>
         </div>
       </div>
-    </div>
+    </>
   )
 }
 

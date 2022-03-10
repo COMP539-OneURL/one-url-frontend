@@ -1,7 +1,6 @@
 import React from "react";
 import { Form, Input, Button, Checkbox } from 'antd';
-import HeaderBar from './header';
-import FooterPage from './footer';
+import Layout from "../components/layout";
 import { Link } from "react-router-dom";
 
 const Login = () => {
@@ -15,8 +14,7 @@ const Login = () => {
   };
 
   return (
-    <>
-      <HeaderBar />
+    <Layout>
         <div style={{ display: 'flex', width: '100%', height: '80%', justifyContent: 'center' }}>
           <div style={{ margin: 'auto', background: 'white', borderRadius: '0.5rem', width: '50%' }}>
             <Form
@@ -61,8 +59,7 @@ const Login = () => {
             </Form>
           </div>
         </div>
-      <FooterPage />
-    </>
+    </Layout>
   )
 }
 

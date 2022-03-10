@@ -1,17 +1,11 @@
 import React from "react";
-import { Layout } from 'antd';
-import HeaderBar from './header';
-import ContentPage from './content';
-import FooterPage from './footer';
+import Layout from "../components/layout";
 
-const HomePage = () => {
+const Home = () => {
   return (
-    <>
-      <HeaderBar />
-      <ContentPage />
-      <FooterPage />
-    </>
+    <Layout>
+    </Layout>
   )
 }
 
-export default HomePage;
+export default Home;
