@@ -49,7 +49,7 @@ const HeaderBar = () => {
   return (
     <>
       <div style={{ display: 'flex', paddingLeft: 50, paddingRight: 50, alignItems: 'center' }}>
-        <div style={{ fontSize: 64, fontWeight: 'bold' }}>OneURL</div>
+        <Link to="/shortenUrl" style={{color:"black"}}><div style={{ fontSize: 64, fontWeight: 'bold' }}>OneURL</div></Link>
         <div style={{ display: 'flex', width: '100%', justifyContent: 'flex-end', fontSize: 24 }}>
           <Link to="/login">
             <div className="auth-link" style={{ paddingRight: 20, color: isLogInHoverText ? 'black' : 'white', cursor: 'pointer' }}
