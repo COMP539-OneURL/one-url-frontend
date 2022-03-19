@@ -1,7 +1,6 @@
 @import '~antd/dist/antd.css';
 
 .App {
-  text-align: center;
   background: #47C0B9;
   height: 100vh;
 }
