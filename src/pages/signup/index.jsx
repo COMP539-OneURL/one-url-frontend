@@ -52,18 +52,19 @@ const Signup = () => {
                   <Input.Password />
                 </Form.Item>
               </div>
-              <div style={{ paddingTop: "20px", paddingBottom: "20px" }}>
+              <div style={{ paddingTop: "20px", paddingBottom: "20px", textAlign: 'center' }}>
                 Already have an account?{" "}
                 <Link to='/login'>
                   <span style={{ color: "#1877F2" }}>Log In</span>
                 </Link>
               </div>
-
-              <Form.Item wrapperCol={{ offset: 0 }}>
-                <Button type='primary' htmlType='submit'>
-                  Sign Up
-                </Button>
-              </Form.Item>
+              <div style={{ textAlign: 'center'}}>
+                <Form.Item wrapperCol={{ offset: 0 }}>
+                  <Button type='primary' htmlType='submit'>
+                    Sign Up
+                  </Button>
+                </Form.Item>
+              </div>
             </div>
           </Form>
         </div>

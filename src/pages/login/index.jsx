@@ -44,17 +44,18 @@ const Login = () => {
                     <Input.Password />
                   </Form.Item>
                 </div>
-                <div style={{ paddingTop: '20px', paddingBottom: '20px'}}>
-                  Do not have an account? <Link to="/signup"><span style={{ color: '#1877F2'}}>Sign up</span></Link>
+                <div style={{ paddingTop: '20px', paddingBottom: '20px', textAlign: 'center' }}>
+                  Do not have an account? <Link to="/signup"><span style={{ color: '#1877F2' }}>Sign up</span></Link>
                 </div>
-
-                <Form.Item 
-                  wrapperCol={{ offset: 0 }}
-                >
-                  <Button type="primary" htmlType="submit">
-                    Log In
-                  </Button>
-                </Form.Item>
+                <div style={{ textAlign: 'center' }}>
+                  <Form.Item 
+                    wrapperCol={{ offset: 0 }}
+                  >
+                    <Button type="primary" htmlType="submit">
+                      Log In
+                    </Button>
+                  </Form.Item>
+                </div>
               </div>
             </Form>
           </div>
