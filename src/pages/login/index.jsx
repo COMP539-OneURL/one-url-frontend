@@ -1,5 +1,5 @@
 import React from "react";
-import { Form, Input, Button, Checkbox } from 'antd';
+import { Form, Input, Button, Row, Col } from 'antd';
 import Layout from "../../components/layout";
 import { Link } from "react-router-dom";
 
@@ -15,8 +15,8 @@ const Login = () => {
 
   return (
     <Layout>
-        <div style={{ display: 'flex', width: '100%', height: '80%', justifyContent: 'center'}}>
-          <div style={{ margin: 'auto', background: 'white', borderRadius: '0.5rem', width: '50%' }}>
+        <Row style={{marginTop:"15vh"}}>
+          <Col span={10} offset={7} style={{ margin: 'auto', background: 'white', borderRadius: '0.5rem', width: '50%' }}>
             <Form
               name="basic"
               // labelCol={{ span: 8 }}
@@ -44,10 +44,11 @@ const Login = () => {
                     <Input.Password />
                   </Form.Item>
                 </div>
-                <div style={{ paddingTop: '20px', paddingBottom: '20px'}}>
-                  Do not have an account? <Link to="/signup"><span style={{ color: '#1877F2'}}>Sign up</span></Link>
-                </div>
+                <Row justify="center" style={{ paddingTop: '20px', paddingBottom: '20px'}}>
+                  <Col>Do not have an account? <Link to="/signup"><span style={{ color: '#1877F2'}}>Sign up</span></Link></Col>
+                </Row>
 
+                <Row justify="center" style={{ paddingTop: '20px', paddingBottom: '20px'}}>
                 <Form.Item 
                   wrapperCol={{ offset: 0 }}
                 >
@@ -55,10 +56,11 @@ const Login = () => {
                     Log In
                   </Button>
                 </Form.Item>
+                </Row>
               </div>
             </Form>
-          </div>
-        </div>
+          </Col>
+        </Row>
     </Layout>
   )
 }

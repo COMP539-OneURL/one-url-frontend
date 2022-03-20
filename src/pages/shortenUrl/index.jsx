@@ -32,7 +32,7 @@ const ShortenUrl = () => {
   return (
     <Layout>
       <Form onFinish={onFinish}>
-        <Row style={{ marginTop: "180px" }}>
+        <Row style={{ marginTop: "15vh" }}>
           <Col span={11} offset={6}>
             <Row>
               <Item
