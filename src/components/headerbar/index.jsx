@@ -49,7 +49,7 @@ const HeaderBar = () => {
   return (
     <>
       <div style={{ display: 'flex', paddingLeft: 50, paddingRight: 50, alignItems: 'center' }}>
-        <Link to="/shortenUrl" style={{color:"black"}}><div style={{ fontSize: 64, fontWeight: 'bold' }}>OneURL</div></Link>
+        <Link to="/" style={{color:"black"}}><div style={{ fontSize: 64, fontWeight: 'bold' }}>OneURL</div></Link>
         <div style={{ display: 'flex', width: '100%', justifyContent: 'flex-end', fontSize: 24 }}>
           <Link to="/login">
             <div className="auth-link" style={{ paddingRight: 20, color: isLogInHoverText ? 'black' : 'white', cursor: 'pointer' }}
@@ -69,7 +69,7 @@ const HeaderBar = () => {
               Sign up {current.key === 'signup' && <div style={{ width: '100%', height: '2px', background: 'black' }}></div>}
             </div>
           </Link>
-          <Link to="/signup">
+          <Link to="/business">
             <div style={{ paddingRight: 20, paddingLeft: 20, color: 'black', cursor: 'pointer', background: 'white', borderRadius: '0.5rem' }} onClick={businessPlanClick}>
               Business Plan
             </div>

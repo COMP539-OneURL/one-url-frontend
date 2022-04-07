@@ -32,7 +32,7 @@ const ShortenUrl = () => {
   return (
     <Layout>
       <Form onFinish={onFinish}>
-        <Row style={{ marginTop: "180px" }}>
+        <Row style={{ marginTop: "15vh" }}>
           <Col span={11} offset={6}>
             <Row>
               <Item
@@ -118,13 +118,13 @@ const ShortenUrl = () => {
           <Col span={11} offset={6}>
             <Carousel>
               <div>
-                <h3 style={contentStyle}>ad1</h3>
+                <h3 style={contentStyle}>Ad1</h3>
               </div>
               <div>
-                <h3 style={contentStyle}>ad2</h3>
+                <h3 style={contentStyle}>Ad2</h3>
               </div>
               <div>
-                <h3 style={contentStyle}>ad3</h3>
+                <h3 style={contentStyle}>Ad3</h3>
               </div>
             </Carousel>
           </Col>
