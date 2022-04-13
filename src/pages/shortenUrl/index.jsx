@@ -5,6 +5,7 @@ import { Form, Input, Row, Col, Button, Typography, Carousel } from "antd";
 import { CopyOutlined, CheckOutlined, FacebookOutlined, LinkedinOutlined, MailOutlined, TwitterOutlined } from "@ant-design/icons";
 import { Link } from "react-router-dom";
 import { EmailShareButton, FacebookShareButton, TwitterShareButton } from "react-share";
+// import B
 
 const { Item } = Form;
 const { Title, Paragraph } = Typography;
@@ -32,7 +33,7 @@ const ShortenUrl = () => {
   return (
     <Layout>
       <Form onFinish={onFinish}>
-        <Row style={{ marginTop: "15vh" }}>
+        <Row style={{ marginTop: "8vh" }}>
           <Col span={11} offset={6}>
             <Row>
               <Item
@@ -116,15 +117,25 @@ const ShortenUrl = () => {
         </Row>
         <Row style={{ marginTop: "20px" }}>
           <Col span={11} offset={6}>
-            <Carousel>
+            <Carousel autoplay>
+              {/* https://ccd.rice.edu/employers/expos-and-recruiting-events/expo */}
               <div>
-                <h3 style={contentStyle}>Ad1</h3>
+                <a href="https://ccd.rice.edu/employers/expos-and-recruiting-events/expo" target="_blank">
+                  <img width="700" src={`${window.location.origin + '/beer_bike.png'}`} />
+                </a>
+                {/* <h3 style={contentStyle}>Ad1</h3> */}
               </div>
+              {/* https://alumni.rice.edu/beerbike */}
               <div>
-                <h3 style={contentStyle}>Ad2</h3>
+                <a href="https://alumni.rice.edu/beerbike" target="_blank">
+                  <img width="700" src={`${window.location.origin + '/career_faire.png'}`} />
+                </a>
               </div>
+              {/* https://coffeehouse.rice.edu/ */}
               <div>
-                <h3 style={contentStyle}>Ad3</h3>
+                <a href="https://coffeehouse.rice.edu" target="_blank">
+                  <img width="700" src={`${window.location.origin + '/rice_coffee_house.png'}`} />
+                </a>
               </div>
             </Carousel>
           </Col>
