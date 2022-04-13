@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 import Layout from "../../components/layout";
 import { Form, Input, Row, Col, Button, Typography, Carousel } from "antd";
@@ -13,6 +13,14 @@ const { Title, Paragraph } = Typography;
 const ShortenUrl = () => {
   const [result, setResult] = useState("https://oneurl.com/3tsasweds");
   const [ifCopy, setIfCopy] = useState(false);
+
+  useEffect(()=>{
+    const timer = setTimeout(()=>{
+      setIfCopy(false)
+    },1000)
+    return () => clearTimeout(timer)
+  }, [ifCopy])
+
   const copy = () => {
     navigator.clipboard.writeText(result);
     setIfCopy(true);
