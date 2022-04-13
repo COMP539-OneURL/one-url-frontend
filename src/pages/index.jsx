@@ -5,6 +5,7 @@ import Login from "./login";
 import Signup from './signup';
 import Home from './home';
 import ShortenUrl from "./shortenUrl";
+import Business from "./business";
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <Route path="login" element={<Login />} />
           <Route path="signup" element={<Signup />} />
           <Route path="shortenUrl" element={<ShortenUrl />} />
+          <Route path="business" element={<Business />} />
         </Routes>
         {/* <HeaderBar />
         <ContentPage />
