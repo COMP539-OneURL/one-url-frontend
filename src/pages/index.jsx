@@ -7,7 +7,7 @@ import Home from './home';
 import ShortenUrl from "./shortenUrl";
 import {Provider} from "react-redux";
 import { createStore } from 'redux'
-import rootReducer from '../reducers'
+import rootReducer from '../reducers'
 import Business from "./business";
 
 const store = createStore(rootReducer)
